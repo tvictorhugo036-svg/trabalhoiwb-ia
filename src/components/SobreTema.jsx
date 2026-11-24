@@ -1,22 +1,11 @@
 import Cartao from './Cartao';
 import styles from './SobreTema.module.css';
 
-// =====================================================================
-// ESTA TELA É DA DUPLA. O enunciado exige texto próprio, fontes citadas
-// e imagens com licença livre e crédito (vale 20 pontos).
-// Substitua o conteúdo abaixo pelo que vocês escreverem.
-// =====================================================================
-// Sugestão de ordem para os parágrafos (escrevam com as palavras de vocês):
-// 1) O que é IA generativa (ex.: ChatGPT) e por que virou assunto nas escolas.
-// 2) Como a escola e o mundo estão lidando: a UNESCO publicou orientações em 2023.
-// 3) O problema das respostas erradas ("alucinações") e por que conferir a resposta importa.
 const PARAGRAFOS = [
-  'ESCREVA AQUI o primeiro parágrafo: o que é o tema, com palavras de vocês.',
-  'ESCREVA AQUI o segundo parágrafo: por que o tema importa em Araraquara ou no campus.',
-  'ESCREVA AQUI o terceiro parágrafo: o que vocês querem descobrir com o formulário.',
+  'A inteligência artificial generativa é um tipo de tecnologia capaz de criar textos, imagens, vídeos, músicas e até códigos de programação a partir de um pedido escrito. Ela ficou conhecida do grande público em novembro de 2022, com o lançamento do ChatGPT, que se tornou o aplicativo de crescimento mais rápido da história. Desde então, ferramentas desse tipo passaram a fazer parte da rotina de muitos estudantes, que as usam para tirar dúvidas, resumir conteúdos e fazer trabalhos escolares.',
+  'O uso da IA na escola levanta dúvidas sobre ética, privacidade dos dados e aprendizagem. Em 2023, a UNESCO publicou a primeira orientação global sobre o uso da IA generativa na educação e na pesquisa, recomendando que os governos regulamentem essas ferramentas nas instituições de ensino. Uma pesquisa da própria UNESCO, feita com mais de 450 escolas e universidades, mostrou que menos de 10% delas tinham políticas ou orientações formais sobre o assunto. Ou seja, muitos estudantes usam a IA sem regras claras sobre como e quando usar.',
+  'Um dos principais problemas da IA generativa são as chamadas alucinações: respostas que parecem corretas e convincentes, mas trazem informações falsas, como datas, definições e fatos incorretos. Isso acontece porque esses sistemas geram o texto que parece mais provável, e não consultam uma fonte para confirmar se ele é verdadeiro. Por isso, é importante conferir o que a IA responde, principalmente em trabalhos escolares. Com este formulário, queremos saber com que frequência a turma usa IA nos estudos, quanto confia nas respostas e em que momentos percebeu um erro.',
 ];
-
-// Fontes para consultar. LEIAM cada uma antes de citar e removam as que não usarem.
 const FONTES = [
   {
     titulo: 'Guia para a IA generativa na educação e na pesquisa (UNESCO, 2023)',
