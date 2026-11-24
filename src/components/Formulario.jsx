@@ -6,9 +6,7 @@ import styles from './Formulario.module.css';
 const VAZIO = { resposta_1: '', resposta_2: 0, resposta_3: '' };
 
 export default function Formulario({ tema, aoEnviar }) {
-  // Formulário controlado: cada campo vive no estado e o input lê dele.
   const [form, setForm] = useState(VAZIO);
-  // Os três estados da requisição: 'enviando', 'enviado' e 'erro' (mais o 'parado' inicial).
   const [status, setStatus] = useState('parado');
   const [mensagemErro, setMensagemErro] = useState('');
 
@@ -88,6 +86,10 @@ export default function Formulario({ tema, aoEnviar }) {
                 {n}
               </label>
             ))}
+          </div>
+          <div className={styles.legendaEscala}>
+            <span>1 = quase nada</span>
+            <span>5 = muito</span>
           </div>
         </fieldset>
 
