@@ -8,7 +8,6 @@ export default function Resultados({ tema, versao }) {
   const [carregando, setCarregando] = useState(true);
   const [erro, setErro] = useState('');
 
-  // Carrega ao abrir a tela e de novo sempre que 'versao' mudar (nova resposta enviada).
   useEffect(() => {
     let ativo = true;
 
