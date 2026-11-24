@@ -1,1 +1,13 @@
-ia-lupa.svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Lupa conferindo uma resposta de IA em um documento">
+<rect width="400" height="300" rx="20" fill="#fff1ec"/>
+<rect x="70" y="30" width="200" height="240" rx="14" fill="#fff" stroke="#ffc9ba" stroke-width="2"/>
+<rect x="95" y="60" width="150" height="10" rx="5" fill="#ffc9ba"/>
+<rect x="95" y="85" width="120" height="10" rx="5" fill="#ffc9ba"/>
+<rect x="95" y="110" width="150" height="10" rx="5" fill="#ffc9ba"/>
+<rect x="95" y="135" width="90" height="10" rx="5" fill="#ff6a4d"/>
+<rect x="95" y="160" width="140" height="10" rx="5" fill="#ffc9ba"/>
+<rect x="95" y="185" width="110" height="10" rx="5" fill="#ffc9ba"/>
+<circle cx="260" cy="150" r="52" fill="#fff" fill-opacity=".75" stroke="#5b3df5" stroke-width="10"/>
+<line x1="298" y1="188" x2="345" y2="238" stroke="#5b3df5" stroke-width="14" stroke-linecap="round"/>
+<path d="M238 150 L254 166 L284 132" stroke="#117a4d" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
