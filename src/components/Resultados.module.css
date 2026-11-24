@@ -1,13 +1,15 @@
-.pergunta { margin: 0 0 12px; font-size: 1rem; }
+.pergunta { margin: 0 0 16px; font-size: 1.05rem; line-height: 1.35; }
 .barras { list-style: none; margin: 0; padding: 0; }
-.linha { display: grid; grid-template-columns: 1fr 2fr auto; gap: 10px; align-items: center; padding: 6px 0; }
-.rotulo { font-size: 0.95rem; }
-.trilho { background: var(--verde-claro); border-radius: 6px; height: 14px; overflow: hidden; }
-.barra { display: block; height: 100%; background: var(--verde); }
-.numero { font-weight: 600; min-width: 1.5em; text-align: right; }
-.media { margin: 0; font-size: 2.2rem; font-weight: 700; color: var(--verde); }
-.media span { font-size: 1rem; font-weight: 400; color: var(--suave); }
-.comentarios { margin: 0; padding: 0; list-style: none; }
-.comentarios li { padding: 10px 0; border-bottom: 1px solid var(--borda); overflow-wrap: anywhere; }
-.comentarios li:last-child { border-bottom: 0; }
-.erro { color: var(--erro); margin: 0; }
+.linha { display: grid; grid-template-columns: minmax(80px, 1fr) 2fr auto; gap: 12px; align-items: center; padding: 7px 0; }
+.rotulo { font-size: 0.93rem; font-weight: 500; }
+.trilho { background: var(--violeta-claro); border-radius: 999px; height: 16px; overflow: hidden; }
+.barra { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--violeta), #7b5cff); transition: width 0.7s ease; }
+.numero { font-family: var(--fonte-titulo); font-weight: 700; min-width: 1.6em; text-align: right; }
+.media { margin: 0; font-family: var(--fonte-titulo); font-size: 3rem; font-weight: 700; color: var(--violeta); line-height: 1; }
+.media span { font-family: var(--fonte-texto); font-size: 1rem; font-weight: 500; color: var(--suave); margin-left: 6px; }
+.comentarios { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.comentarios li {
+  padding: 12px 14px; background: var(--papel); border-left: 4px solid var(--coral);
+  border-radius: 4px 12px 12px 4px; overflow-wrap: anywhere;
+}
+.erro { color: var(--erro); margin: 0; font-weight: 600; }
