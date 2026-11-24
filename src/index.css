@@ -1,17 +1,28 @@
 :root {
-  --fundo: #f6f7f4;
-  --texto: #1c2420;
-  --suave: #5b6760;
-  --verde: #1f6b4a;
-  --verde-claro: #dcebe3;
-  --borda: #d5dbd6;
-  --erro: #a32a2a;
+  --papel: #f5f2ec;
+  --tinta: #16162e;
+  --suave: #5f5f78;
+  --violeta: #5b3df5;
+  --violeta-escuro: #1d1450;
+  --violeta-claro: #ebe6ff;
+  --coral: #ff6a4d;
+  --borda: #ddd8ea;
+  --ok: #117a4d;
+  --erro: #b42318;
+  --fonte-titulo: 'Space Grotesk', system-ui, sans-serif;
+  --fonte-texto: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --sombra: 0 1px 2px rgba(22, 22, 46, 0.06), 0 8px 24px rgba(22, 22, 46, 0.06);
 }
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  background: var(--fundo);
-  color: var(--texto);
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.55;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--fonte-texto);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: var(--fonte-titulo); }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
 }
