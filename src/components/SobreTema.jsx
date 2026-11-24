@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Cartao from './Cartao';
 import styles from './SobreTema.module.css';
 
@@ -6,6 +7,7 @@ const PARAGRAFOS = [
   'O uso da IA na escola levanta dúvidas sobre ética, privacidade dos dados e aprendizagem. Em 2023, a UNESCO publicou a primeira orientação global sobre o uso da IA generativa na educação e na pesquisa, recomendando que os governos regulamentem essas ferramentas nas instituições de ensino. Uma pesquisa da própria UNESCO, feita com mais de 450 escolas e universidades, mostrou que menos de 10% delas tinham políticas ou orientações formais sobre o assunto. Ou seja, muitos estudantes usam a IA sem regras claras sobre como e quando usar.',
   'Um dos principais problemas da IA generativa são as chamadas alucinações: respostas que parecem corretas e convincentes, mas trazem informações falsas, como datas, definições e fatos incorretos. Isso acontece porque esses sistemas geram o texto que parece mais provável, e não consultam uma fonte para confirmar se ele é verdadeiro. Por isso, é importante conferir o que a IA responde, principalmente em trabalhos escolares. Com este formulário, queremos saber com que frequência a turma usa IA nos estudos, quanto confia nas respostas e em que momentos percebeu um erro.',
 ];
+
 const FONTES = [
   {
     titulo: 'Guia para a IA generativa na educação e na pesquisa (UNESCO, 2023)',
@@ -29,8 +31,11 @@ const FONTES = [
   },
 ];
 
+const CREDITO = 'Ilustração original criada para este projeto, de uso livre.';
 const IMAGENS = [
-  // { src: '/imagem.jpg', alt: 'Descrição da imagem', credito: 'Autor, licença CC BY 4.0, via Wikimedia Commons' },
+  { src: '/img/ia-rede.svg', alt: 'Rede neural artificial com camadas de nós conectados', credito: CREDITO },
+  { src: '/img/ia-chat.svg', alt: 'Conversa entre um estudante e um chatbot de IA', credito: CREDITO },
+  { src: '/img/ia-lupa.svg', alt: 'Lupa conferindo uma resposta de IA em um documento', credito: CREDITO },
 ];
 
 export default function SobreTema({ tema }) {
@@ -38,20 +43,17 @@ export default function SobreTema({ tema }) {
     <>
       <Cartao titulo={`Sobre: ${tema.nome}`}>
         {PARAGRAFOS.map((p, i) => (
-          <p key={i} className={styles.paragrafo}>{p}</p>
+          <Fragment key={i}>
+            <p className={styles.paragrafo}>{p}</p>
+            {IMAGENS[i] && (
+              <figure className={styles.figura}>
+                <img src={IMAGENS[i].src} alt={IMAGENS[i].alt} className={styles.imagem} loading="lazy" />
+                <figcaption className={styles.legenda}>{IMAGENS[i].credito}</figcaption>
+              </figure>
+            )}
+          </Fragment>
         ))}
       </Cartao>
-
-      {IMAGENS.length > 0 && (
-        <Cartao titulo="Imagens">
-          {IMAGENS.map((img) => (
-            <figure key={img.src} className={styles.figura}>
-              <img src={img.src} alt={img.alt} className={styles.imagem} />
-              <figcaption className={styles.legenda}>{img.credito}</figcaption>
-            </figure>
-          ))}
-        </Cartao>
-      )}
 
       <Cartao titulo="Fontes">
         {FONTES.length === 0 ? (
