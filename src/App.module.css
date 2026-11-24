@@ -1,12 +1,40 @@
-.pagina { max-width: 680px; margin: 0 auto; padding: 24px 16px 48px; }
-.topo { margin-bottom: 20px; }
-.turma { margin: 0; color: var(--suave); font-size: 0.9rem; }
-.titulo { margin: 4px 0 0; font-size: 1.9rem; line-height: 1.2; color: var(--verde); }
-.abas { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
-.aba, .abaAtiva {
-  font: inherit; cursor: pointer; padding: 10px 16px; border-radius: 8px;
-  border: 1px solid var(--borda); background: #fff; color: var(--texto);
+.pagina { max-width: 720px; margin: 0 auto; padding: 16px 16px 56px; }
+
+.hero {
+  position: relative; overflow: hidden; border-radius: 22px;
+  padding: 32px 26px 36px; margin-bottom: 18px; color: #fff;
+  background: radial-gradient(circle at 85% 10%, #7b5cff 0%, transparent 45%),
+              linear-gradient(140deg, var(--violeta-escuro) 0%, #3b24b8 100%);
+  box-shadow: var(--sombra);
 }
-.abaAtiva { background: var(--verde); border-color: var(--verde); color: #fff; }
-.aba:focus-visible, .abaAtiva:focus-visible { outline: 3px solid var(--verde); outline-offset: 2px; }
-.conteudo { min-height: 240px; }
+.textoHero { position: relative; z-index: 1; max-width: 62%; }
+.turma {
+  margin: 0 0 10px; font-size: 0.75rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #cfc6ff; font-weight: 600;
+}
+.titulo { margin: 0 0 10px; font-size: clamp(1.9rem, 6vw, 2.8rem); line-height: 1.08; letter-spacing: -0.02em; }
+.sub { margin: 0; color: #e0daff; font-size: 0.98rem; }
+.arte {
+  position: absolute; right: -18px; bottom: -22px; width: 48%; max-width: 300px;
+  border-radius: 20px; transform: rotate(-4deg); opacity: 0.95; pointer-events: none;
+}
+
+.abas {
+  display: flex; gap: 6px; padding: 6px; margin-bottom: 20px;
+  background: #fff; border: 1px solid var(--borda); border-radius: 14px; box-shadow: var(--sombra);
+}
+.aba, .abaAtiva {
+  flex: 1; font: inherit; font-weight: 600; font-size: 0.95rem; cursor: pointer;
+  padding: 11px 8px; border: 0; border-radius: 10px; color: var(--suave); background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+.aba:hover { background: var(--violeta-claro); color: var(--violeta); }
+.abaAtiva { background: var(--violeta); color: #fff; }
+.aba:focus-visible, .abaAtiva:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
+
+.conteudo { min-height: 260px; }
+
+@media (max-width: 520px) {
+  .textoHero { max-width: 100%; }
+  .arte { opacity: 0.22; width: 70%; right: -30px; }
+}
