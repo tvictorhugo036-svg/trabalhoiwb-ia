@@ -1,0 +1,13 @@
+.pergunta { margin: 0 0 12px; font-size: 1rem; }
+.barras { list-style: none; margin: 0; padding: 0; }
+.linha { display: grid; grid-template-columns: 1fr 2fr auto; gap: 10px; align-items: center; padding: 6px 0; }
+.rotulo { font-size: 0.95rem; }
+.trilho { background: var(--verde-claro); border-radius: 6px; height: 14px; overflow: hidden; }
+.barra { display: block; height: 100%; background: var(--verde); }
+.numero { font-weight: 600; min-width: 1.5em; text-align: right; }
+.media { margin: 0; font-size: 2.2rem; font-weight: 700; color: var(--verde); }
+.media span { font-size: 1rem; font-weight: 400; color: var(--suave); }
+.comentarios { margin: 0; padding: 0; list-style: none; }
+.comentarios li { padding: 10px 0; border-bottom: 1px solid var(--borda); overflow-wrap: anywhere; }
+.comentarios li:last-child { border-bottom: 0; }
+.erro { color: var(--erro); margin: 0; }

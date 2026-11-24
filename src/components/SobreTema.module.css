@@ -1,0 +1,6 @@
+.paragrafo { margin: 0 0 12px; max-width: 65ch; }
+.figura { margin: 0 0 16px; }
+.imagem { max-width: 100%; border-radius: 8px; }
+.legenda { color: var(--suave); font-size: 0.85rem; margin-top: 6px; }
+.fontes { margin: 0; padding-left: 20px; }
+.fontes li { margin-bottom: 6px; }

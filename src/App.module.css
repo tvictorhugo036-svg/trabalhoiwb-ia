@@ -1,0 +1,12 @@
+.pagina { max-width: 680px; margin: 0 auto; padding: 24px 16px 48px; }
+.topo { margin-bottom: 20px; }
+.turma { margin: 0; color: var(--suave); font-size: 0.9rem; }
+.titulo { margin: 4px 0 0; font-size: 1.9rem; line-height: 1.2; color: var(--verde); }
+.abas { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.aba, .abaAtiva {
+  font: inherit; cursor: pointer; padding: 10px 16px; border-radius: 8px;
+  border: 1px solid var(--borda); background: #fff; color: var(--texto);
+}
+.abaAtiva { background: var(--verde); border-color: var(--verde); color: #fff; }
+.aba:focus-visible, .abaAtiva:focus-visible { outline: 3px solid var(--verde); outline-offset: 2px; }
+.conteudo { min-height: 240px; }
