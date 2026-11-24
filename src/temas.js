@@ -1,5 +1,4 @@
-// Tema do projeto: Inteligência artificial.
-// p1 = escolha única, p2 = escala de 1 a 5, p3 = texto livre (opcional).
+
 export const TEMA = {
   id: 'ia',
   nome: 'Inteligência artificial',
